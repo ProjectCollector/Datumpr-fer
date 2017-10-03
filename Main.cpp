@@ -10,7 +10,7 @@ int main() {
 	int year;
 	bool switchyear;
 	
-	//Input
+	//Input and Question
 
 	cout << "Geben Sie den Tag ein: ";
 	cin >> getday;
@@ -21,7 +21,7 @@ int main() {
 
 	// Processing 
 
-	if (year % 4 == 0) {
+	if ((year % 4 == 0 && !(year%100 == 0)) || year%400 == 0) {
 		switchyear = true;
 	}
 	else {
